@@ -448,25 +448,32 @@ span.highlight {
     background: #fff;
     color: var(--black);
 }
-/* traning sec start  */
-.traning {
+/* training sec start  */
+.training {
     padding: 245px 0;
-} 
-.traning-wrap {
+    position: relative;
+}
+.training-shape {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    z-index: -1;
+}
+.training-wrap {
     border-radius: 2px;
     border: 4px solid #EFEFEF;
     background: #FFF;
 }
-.traning_content {
+.training_content {
     padding: 64px;
 }
-.traning_content h4 {
+.training_content h4 {
     color: #111;
     font-size: 52px;
     font-weight: 400;
     line-height: 120%;
 }
-.traning_content p {
+.training_content p {
     color: #111;
     font-size: 24px;
     font-weight: 400;
@@ -474,10 +481,10 @@ span.highlight {
     text-align: left;
     margin: 32px 0;
 }
-.traning-wrap .grid {
+.training-wrap .grid {
     grid-template-columns: 2fr 1fr;
 }
-.traning_img {
+.training_img {
     height: 100%;
     background: url("../images/choose-plan-bg.png") var(--orange);
     background-position: center;
@@ -489,7 +496,7 @@ span.highlight {
     justify-content: center;
     align-items: center;
 }
-.traning_img p {
+.training_img p {
     color: #FFF;
     font-family: "SangBleu Sunrise";
     font-size: 64px;
@@ -497,7 +504,7 @@ span.highlight {
     line-height: 120%;
     margin: 12px 0 52px;
 }
-/* traning sec end  */
+/* training sec end  */
 /* site footer  */
 .site-footer {
     background:#000;

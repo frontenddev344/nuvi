@@ -544,7 +544,7 @@ span.highlight {
     color: #fff;
 }
 .how-card h4 {
-    color: #111;
+    color:var(--black);
     text-align: center;
     font-size: 64px;
     font-weight: 400;
@@ -552,7 +552,7 @@ span.highlight {
     transition: all 0.3s ease-in-out;
 }
 .how-card p {
-    color: #111;
+    color:var(--black);
     font-family: "SangBleu Sunrise";
     font-size: 24px;
     font-style: normal;
@@ -562,6 +562,84 @@ span.highlight {
     transition: all 0.3s ease-in-out;
 }
 /* how-it_works end */
+/* client-story start  */
+.client-story-wrap {
+    border-radius: 24px;
+    background: #F7F7F7;
+    padding: 64px;
+    margin-top: 64px;
+}
+.client-story-wrap .grid {
+    grid-gap: 32px;
+}
+.client-story-card {
+    background: #fff;
+    padding: 64px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 52px;
+    position: relative;
+    isolation: isolate;
+    cursor: pointer;
+}
+.client-story-card button {
+    border-radius: 24px;
+    background: #F7F7F7;
+    border: 0;
+    padding: 12px 24px;
+    color:var(--black);
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.36px;
+    text-transform: uppercase;
+}
+.client-story-card h3 {
+    color:var(--black);
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 150%;
+    transition: all 0.3s ease-in-out;
+}
+.client-story-card:hover h3 {
+    color: #fff;
+}
+.client-story-card a {
+    color:var(--black);
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: -0.36px;
+    transition: all 0.3s ease-in-out;
+}
+.client-story-card:hover a{
+  color: var(--orange);
+}
+.hover-img {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+.client-story-card:hover .hover-img {
+    opacity: 1;
+    visibility: visible;
+}
+.hover-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+/* client-story end  */
 /* site footer  */
 .site-footer {
     background:#000;

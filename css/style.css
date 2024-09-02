@@ -16,6 +16,7 @@ body {
    
     --black:#111111;
     --orange:#FF7A00;
+    --yellow:#F7D902;
     --helvetica:'Helvetica';
     --roboto:"Roboto", sans-serif;
     
@@ -64,7 +65,7 @@ h6 {
 }
 
 p{
-    color: #FFF;
+    color: var(--black);
     text-align: center;
     font-family: Helvetica;
     font-size: 32px;
@@ -183,22 +184,22 @@ p{
 }
 /*header end*/ 
 .section-title {
-    color: #73AD59;
+    color: var(--black);
     text-align: center;
-    font-family: "Dancing Script";
-    font-size: 98px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 130%;
-}
-.sub-title {
-    color: #6D6F70;
-    text-align: center;
-    font-family: Lato;
-    font-size: 48px;
-    font-style: normal;
+    font-size: 84px;
     font-weight: 400;
     line-height: 120%;
+}
+span.highlight {
+    color: var(--orange);
+}
+.sub-title {
+    color:var(--black);
+    text-align: center;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 140%;
+    letter-spacing: -0.64px;
 }
 /* site banner start  */
 
@@ -247,6 +248,7 @@ p{
 .banner-content > p {
     max-width: 738px;
     margin: 0 auto 44px;
+    color: #fff;
 }
 .primary-btn {
     color: #FFF;
@@ -285,11 +287,166 @@ p{
     position: absolute;
     top: 20px;
     left: 8px;
+    transition: all 0.4s linear;
+}
+.calendar-sec-content:hover .stick {
+    transform: rotate(5deg) translate(10px, -15px);
 }
 .calendar-sec-content .stick img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+/* plans start  */
+.plans {
+    background-image: url("../images/plans-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 124px;
+}
+.plans-warp {
+    padding: 52px;
+    border-radius: 24px;
+    background: #FFF;
+}
+.plans-box-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-gap: 84px;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.plans-box-content h3 {
+    color: #111;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 120%;
+}
+.plans-box-content p {
+    color: #111;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+}
+.plan-card ul li {
+    display: flex;
+    align-items: center;
+    color: #111;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+.plan-card ul li:not(:last-child) {
+    margin-bottom: 12px;
+}
+.plan-card ul li i {
+    color: #12C177;
+    margin-right: 12px;
+}
+.plan-card ul li img {
+    margin-left: 6px;
+}
+.plans-box .grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+}
+
+.plan-card {
+    border-radius: 2px 0px 0px 2px;
+    border: 4px solid #EFEFEF;
+}
+
+.plan-card h4 {
+    color: #111;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0 0 24px;
+}
+.plan-card p {
+    color: rgb(17 17 17 / 70%);
+    font-family: Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+}
+.plan-card-body {
+    padding: 64px;
+}
+.plan-card-body ul {
+    margin: 36px 0 0;
+}
+.plan-card-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px;
+    background: #F7F7F7;
+}
+.plan-card-footer p {
+    color: #111;
+    font-family: "SangBleu Sunrise";
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+.plan-card-footer p sub {
+    color:inherit;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.primary-btn.yellow-bg {
+    font-size: 16px;
+    padding: 12px 24px;
+    color: var(--black);
+    background: var(--yellow);
+}
+.appointment-engine {
+    border-radius: 12px;
+    background: #FEF5E5;
+    padding: 32px;
+}
+.appointment-engine h6 {
+    color: #111;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+    margin-bottom: 12px;
+}
+.appointment-engine h6 i {
+    color: #12C177;
+    font-weight: 400;
+}
+.plan-card.preminum {
+    border-color: var(--orange);
+    margin-left: -4px;
+}
+.plan-card.preminum .plan-card-footer {
+    background: var(--orange);
+}
+.plan-card.preminum .plan-card-footer p {
+    color: #fff;
+}
+.plan-card.preminum .plan-card-body ul {
+    margin: 36px 0;
+}
+.primary-btn.bg-white {
+    background: #fff;
+    color: var(--black);
 }
 
 /* site footer  */
@@ -309,6 +466,13 @@ p{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+}
+
+.site-footer .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
     align-items: center;
 }
 

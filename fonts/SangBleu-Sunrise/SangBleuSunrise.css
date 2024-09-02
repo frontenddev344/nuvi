@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'SangBleu Sunrise';
+    src: url('SangBleuSunrise-Regular.eot');
+    src: url('SangBleuSunrise-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SangBleuSunrise-Regular.woff2') format('woff2'),
+        url('SangBleuSunrise-Regular.woff') format('woff'),
+        url('SangBleuSunrise-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

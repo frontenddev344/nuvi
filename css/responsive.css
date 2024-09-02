@@ -1,0 +1,37 @@
+/*media queries start*/
+@media screen and (max-width:768px){
+	.site-nav {
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    width: 300px;
+	    background: #000;
+	    transition: 0.4s cubic-bezier(0, 0, 0.13, 0.61);
+	    transform: translateX(-100%);
+	}
+
+	.site-nav ul {
+	    display: block;
+	    padding: 30px 60px 0;
+	}
+
+	.menu-toggle{
+		display: block;
+	}
+
+	.closed-menu {
+	    font-size: 40px;
+	    color: #fff;
+	    position: absolute;
+	    top: -5px;
+	    right: 15px;
+	    display: inline-block;
+	}
+
+	.toggle .site-nav {
+    	transform: translateX(0);
+	}
+}
+

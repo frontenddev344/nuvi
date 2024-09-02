@@ -1,0 +1,207 @@
+/* font-faimly  */
+
+/*global start*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family:var(--helvetica);
+}
+
+:root {
+   
+    --black:#111111;
+    --helvetica:'Helvetica';
+    --orange:#FF7A00;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+span {
+    display: inline-block;
+}
+summary {
+    list-style-type: none;
+}
+
+figure{
+    margin:0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'SangBleu Sunrise';
+}
+
+p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--black);
+    text-transform: none;
+}
+.container {
+    width: 100%;
+    max-width: 1672px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-cols-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-cols-6 {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.item {
+    width: 100%;
+}
+
+/*header start*/
+.site-header {
+    padding: 1rem 0;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 2px 5px 10px rgb(0 0 0 / 30%);
+    z-index: 99;
+}
+.site-header .container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+    align-items: center;
+
+}
+
+.site-logo img {
+    max-width: 10rem;
+}
+
+.site-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.site-nav li a {
+    font-size: 1.7rem;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    text-transform: capitalize;
+}
+
+.site-nav li a {
+    font-size: 1.7rem;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    text-transform: capitalize;
+    color: #f39c12;
+    position: relative;
+}
+
+.site-nav li a::after {
+    content: "";
+    position: absolute;
+    border-bottom: 0.2rem solid #f39c12;
+    width: 0%;
+    top: 100%;
+    left: 0%;
+    margin: 0 auto;
+    transition: all 0.3s linear;
+}
+
+.site-nav li a:hover::after{
+	width: 100%;
+	transition: all 0.3s linear;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+.menu-toggle .bar-1,.bar-2,.bar-3{
+    width: 2.5rem;
+    height: 2px;
+    background-color: #333;
+    margin: 0.6rem 0;
+    transition: all 0.3s linear;
+    display: block;
+}
+
+.closed-menu{
+    display: none;
+}
+
+.section-title {
+    color: #73AD59;
+    text-align: center;
+    font-family: "Dancing Script";
+    font-size: 98px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+}
+.sub-title {
+    color: #6D6F70;
+    text-align: center;
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+/* site banner start  */
+
+

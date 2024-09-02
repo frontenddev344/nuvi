@@ -505,6 +505,63 @@ span.highlight {
     margin: 12px 0 52px;
 }
 /* training sec end  */
+/* how-it_works start */
+.how-it_works {
+    padding: 120px 0 224px;
+    position: relative;
+}
+.how-work-shape {
+    position: absolute;
+    left: 0;
+    top: 190px;
+    bottom: 0;
+    z-index: -1;
+}
+.how-it_works .section-title {
+    text-align: left;
+}
+.how-it_works-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px , 1fr));
+    grid-gap: 32px;
+    margin-top: 64px;
+}
+.how-card {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 52px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 6px 12px 0px rgba(17, 17, 17, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+.how-card:hover {
+    background: var(--orange);
+}
+.how-card:hover h4, .how-card:hover p {
+    color: #fff;
+}
+.how-card h4 {
+    color: #111;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 150%;
+    transition: all 0.3s ease-in-out;
+}
+.how-card p {
+    color: #111;
+    font-family: "SangBleu Sunrise";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+}
+/* how-it_works end */
 /* site footer  */
 .site-footer {
     background:#000;

@@ -205,13 +205,20 @@ p{
 .site-banner-warp {
     position: relative;
     height: 1020px;
-    position: relative;
+    border-radius: 0px 0px 52px 52px;
+    overflow: hidden;
 }
 .site-banner-warp::before{
     content: "";
     position: absolute;
     inset: 0;
     background: rgb(0 0 0 / 35%);
+}
+
+.banner-curve-shape {
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 .banner-video {
     height: 100%;
@@ -224,10 +231,11 @@ p{
 }
 .banner-content {
     position: absolute;
-    top: 50%;
+    top: 160px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
     text-align: center;
+    z-index: 1;
 }
 .banner-content h1 {
     color: #FFF;
@@ -237,7 +245,8 @@ p{
     line-height: 110%;
 }
 .banner-content > p {
-    margin-bottom: 44px;
+    max-width: 738px;
+    margin: 0 auto 44px;
 }
 .primary-btn {
     color: #FFF;
@@ -258,15 +267,24 @@ p{
 /* site banner end */
 .calendar-sec {
     position: relative;
-    margin-top: -380px;
+    margin-top: -280px;
 }
 .calendar-sec-content {
     position: relative;
+    width: max-content;
+    margin: 0 auto;
+    border-radius: 40px;
+    border: 24px solid rgba(255, 255, 255, 0.10);
+    box-shadow: 0px 4px 164px 0px rgba(0, 0, 0, 0.10);
+    margin-bottom: 120px;
+}
+.calendar-sec-content img {
+    border-radius: 20px;
 }
 .stick {
     position: absolute;
-    top: 190px;
-    left: 190px;
+    top: 20px;
+    left: 8px;
 }
 .calendar-sec-content .stick img {
     width: 100%;

@@ -1274,7 +1274,9 @@ img#Twitter {
 
 
 /* blog page start  */
-
+.blog-tab {
+    margin: 52px 0 0;
+}
 .blog-tab-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(530px, 1fr));
@@ -1282,25 +1284,34 @@ img#Twitter {
 }
 .card {
     background: #fff;
-    border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    border: 1px solid #e0e0e0;
+    padding: 32px;
+    border-radius: 32px;
+    border: 4px solid #EFEFEF;
 }
 
 .card-header {
     padding: 16px;
-    font-size: 12px;
-    color: #888;
-    text-transform: uppercase;
-    font-weight: bold;
+    background: transparent;
+    color:var(--black);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: -0.32px;
+    border: 0;
 }
 
 .card-title {
     padding: 0 16px;
-    font-size: 20px;
-    font-weight: bold;
     margin-bottom: 12px;
+    color:var(--black);
+    font-family: "SangBleu Sunrise";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
 }
 
 .card-image {
@@ -1311,8 +1322,12 @@ img#Twitter {
 
 .card-content {
     padding: 16px;
-    font-size: 14px;
-    color: #666;
+    color:var(--black);
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
 }
 
 .card-tags {
@@ -1355,4 +1370,23 @@ img#Twitter {
     content: "\2197";
     margin-left: 6px;
     font-size: 12px;
+}
+
+.blog-tab .nav-tabs .nav-link {
+    padding: 24px 44px;
+    color: #111;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: -0.32px;
+    border-radius: 124px;
+    border: 2px solid #EFEFEF;
+}
+.blog-tab .nav-tabs {
+    padding: 52px 0;
+    border: 0;
+    gap: 12px;
 }

@@ -736,6 +736,19 @@ span.highlight {
     line-height: 140%;
 }
 /* testimonial end  */
+
+/* partner start  */
+.partner {
+    padding: 160px 0;
+}
+.partner-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    margin-top: 64px;
+}
 /* site footer  */
 .site-footer {
     background:#000;

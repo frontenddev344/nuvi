@@ -654,6 +654,13 @@ span.highlight {
 /* secret-sauce start  */
 .secret-sauce {
     padding: 272px 0 80px;
+    position: relative;
+}
+.secret-curve-shape {
+    position: absolute;
+    top: 56%;
+    transform: translateY(-50%);
+    z-index: -1;
 }
 .secret-sauce-wrap .grid {
     grid-template-columns: 1.2fr 1fr;

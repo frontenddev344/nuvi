@@ -751,6 +751,10 @@ img#Dribbble {
     top: 160px;
     right: -35px;
 }
+img#Twitter {
+    left: -40px;
+    bottom: 40px;
+}
 /* secret-sauce end  */
 /* testimonial start  */
 .testimonial-card {

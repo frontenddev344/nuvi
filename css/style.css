@@ -664,6 +664,16 @@ span.highlight {
     text-align: left;
     margin-bottom: 72px;
 }
+.secret-sauce-img {
+    position: relative;
+}
+.social-float-logos {
+    position: absolute;
+    inset: 0;
+}
+.social-float-logos img {
+    position: absolute;
+}
 .secret-sauce-cont p {
     color: #111;
     font-size: 28px;
@@ -699,6 +709,36 @@ span.highlight {
     font-weight: 400;
     line-height: 140%;
     max-width: 460px;
+}
+img#LinkedIn {
+    top: -50px;
+    left: 80px;
+}
+img#YouTube {
+    right: -30px;
+    top: -60px;
+}
+img#YouTube {
+    right: -30px;
+    top: -60px;
+}
+img#Instagram {
+    right: -50px;
+    bottom: 0;
+}
+img#Facebook {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 60px;
+}
+img#Messenger {
+    left: 70px;
+    bottom: 20px;
+}
+img#Pinterest {
+    right: -15px;
+    bottom: 23%;
+    transform: translateY(-50%);
 }
 /* secret-sauce end  */
 /* testimonial start  */

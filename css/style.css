@@ -740,6 +740,10 @@ img#Pinterest {
     bottom: 23%;
     transform: translateY(-50%);
 }
+img#Dribbble {
+    top: 160px;
+    right: -35px;
+}
 /* secret-sauce end  */
 /* testimonial start  */
 .testimonial-card {

@@ -718,6 +718,10 @@ span.highlight {
     width: 100%;
     height:100%;
     border-radius: inherit;
+    transition: all 0.2s linear;
+}
+.testimonial-card .card_img:hover img {
+    transform: scale(1.1);
 }
 .testimonial-card .card_content h4 {
     color: #111;

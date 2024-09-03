@@ -1271,3 +1271,88 @@ img#Twitter {
     padding: 10px 15px;    
     font-size: 16px;     
 }
+
+
+/* blog page start  */
+
+.blog-tab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(530px, 1fr));
+    grid-gap: 24px;
+}
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+}
+
+.card-header {
+    padding: 16px;
+    font-size: 12px;
+    color: #888;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card-title {
+    padding: 0 16px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.card-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 16px;
+    font-size: 14px;
+    color: #666;
+}
+
+.card-tags {
+    padding: 0 16px 16px;
+    font-size: 12px;
+    color: #888;
+}
+
+.card-tags span {
+    margin-right: 8px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    font-size: 12px;
+    color: #888;
+    border-top: 1px solid #e0e0e0;
+}
+
+.card-footer .date {
+    display: flex;
+    align-items: center;
+}
+
+.card-footer .date::before {
+    content: "\1F4C5";
+    margin-right: 6px;
+}
+
+.card-footer .read-more {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-footer .read-more::after {
+    content: "\2197";
+    margin-left: 6px;
+    font-size: 12px;
+}

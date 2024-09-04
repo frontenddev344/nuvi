@@ -316,12 +316,14 @@ span.highlight {
 }
 .calendar-sec-content {
     position: relative;
-    width: max-content;
+    width: 100%;
     margin: 0 auto;
     border-radius: 40px;
     border: 24px solid rgba(255, 255, 255, 0.10);
     box-shadow: 0px 4px 164px 0px rgba(0, 0, 0, 0.10);
     margin-bottom: 120px;
+    max-width: 1335px;
+    overflow: hidden;
 }
 .calendar-sec-content img {
     border-radius: 20px;
@@ -516,11 +518,10 @@ span[style="--i:6;"] {
     padding: 20px 0 158px;
 }
 .magic-behind-para p {
-    color: #111;
+    color:var(--black);
     text-align: center;
     font-family: "SangBleu Sunrise";
     font-size: 64px;
-    font-style: normal;
     font-weight: 400;
     line-height: 150%;
     max-width: 1400px;
@@ -644,7 +645,7 @@ span[style="--i:6;"] {
     font-family: Helvetica;
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 140%;
     text-align: left;
 }
@@ -802,7 +803,7 @@ span[style="--i:6;"] {
 }
 .how-it_works-box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px , 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px , 1fr));
     grid-gap: 32px;
     margin-top: 64px;
 }
@@ -1185,6 +1186,7 @@ img#Twitter {
 }
 .testimonial-card-warp > .grid {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-row-gap: 40px;
 }
 .testimonial-card .card_img {
     width: 300px;

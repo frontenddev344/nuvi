@@ -10,7 +10,83 @@
 @media screen and (max-width:1600px){
 	.timeline-card {
 		width: 450px;
-		height: 400px;
+		height: 450px;
+	}
+	.banner-content h1 {
+		font-size: 84px;
+	}
+	.testimonial-card .card_img {
+		width: 250px;
+		height: 250px;
+	}
+	.partner-logo {
+		max-width: 180px;
+	}
+	.how-card h4 {
+		font-size: 52px;
+	}
+	.how-card p {
+		font-size: 20px;
+	}
+}
+@media screen and (max-width:1400px){
+	.calendar-sec-content {
+		max-width: 90%;
+	}
+	.section-title {
+		font-size: 58px;
+	}
+	.sub-title {
+		font-size: 26px;
+	}
+	.magic-behind-para p {
+		font-size: 48px;
+	}
+	.plans-box-content h3 {
+		font-size: 40px;
+	}
+	.timeline .grid {
+		grid-gap: 25px;
+	}
+	.timeline-card-content h4 {
+		font-size: 30px;
+		margin: 0 0 20px;
+	}
+	.timeline-card-content p {
+		font-size: 18px;
+	}
+	.client-story-card h3 {
+		font-size: 32px;
+	}
+	.client-story-card a {
+		font-size: 16px;
+	}
+	.client-story-card button {
+		font-size: 16px;
+	}
+	.plan-card h4 {
+		font-size: 32px;
+	}
+	.check-mark li {
+		font-size: 20px;
+	}
+	.plan-card-footer p {
+		font-size: 42px;
+	}
+	.plan-card-footer p sub {
+		font-size: 20px;
+	}
+	.primary-btn {
+		font-size: 16px;
+		padding: 14px 34px;
+	}
+}
+@media screen and (max-width:1280px){
+	.timeline-card {
+		width: 400px;
+	}
+	.client-story-card {
+		padding: 34px;
 	}
 }
 @media screen and (max-width:768px){

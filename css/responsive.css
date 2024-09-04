@@ -31,6 +31,9 @@
 	.section-title {
 		font-size: 72px;
 	}
+	.training {
+		padding: 180px 0;
+	}
 }
 @media screen and (max-width:1400px){
 	.calendar-sec-content {
@@ -47,12 +50,15 @@
 	}
 	.magic-behind-para p {
 		font-size: 48px;
+		max-width: 90%;
 	}
 	.plans-box-content h3 {
 		font-size: 40px;
 	}
 	.timeline .grid {
 		grid-gap: 25px;
+		display: flex;
+		justify-content: center;
 	}
 	.timeline-card-content h4 {
 		font-size: 30px;
@@ -123,6 +129,25 @@
 	.training_content p {
 		font-size: 22px;
 	}
+	.training {
+		padding: 120px 0;
+	}
+	.secret-sauce-wrap .grid {
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 40px;
+		align-items: start;
+		grid-column-gap: 40px;
+	}
+	.secret-sauce {
+		padding: 180px 0 80px;
+	}
+	.footer-shape {
+		margin-bottom: -60px;
+	}
+	.footer-logo {
+		margin: 0 auto 40px;
+	}
+
 }
 @media screen and (max-width:1280px){
 	.timeline-card {
@@ -150,7 +175,6 @@
 	.item.timeline-child-left {
 		transform: translateX(110%);
 		position: relative;
-		z-index: 2;
 	}
 	.timeline-card {
 		height: 360px;
@@ -158,8 +182,87 @@
 	.training-wrap .grid {
 		grid-template-columns: 1.5fr 1fr;
 	}
+	.magic-behind-para p {
+		font-size: 38px;
+	}
+	.plans-box-content h3 {
+		font-size: 28px;
+	}
+	.plans-box-content p {
+		font-size: 20px;
+	}
+	.plan-card-body {
+		padding: 34px;
+	}
+	.plan-card-footer {
+		padding: 34px;
+	}
+	.section-title {
+		font-size: 44px;
+	}
+	.sub-title {
+		font-size: 24px;
+	}
+	.plan-card h4 {
+		font-size: 26px;
+	}
+	.check-mark li {
+		font-size: 18px;
+	}
+	.appointment-engine h6 {
+		font-size: 20px;
+	}
+	.appointment-engine p {
+		font-size: 20px;
+	}
+	.plan-card-footer p {
+		font-size: 32px;
+	}
+	.inverting-sec h2 {
+		font-size: 32px;
+	}
+	.partner-highlight img {
+		max-width: 100px;
+	}
+	.training_content {
+		padding: 34px;
+	}
+	.footer-middle .grid {
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 40px;
+	}
+	.f-contact h5 {
+		text-align: left;
+	}
+	.f-contact  p {
+		text-align:left;
+	}
+	.address {
+		margin-left:0;
+	}
+	.timing h6 {
+		text-align:left;
+	}
+	.days {
+		margin-left:0;
+	}
 }
-@media screen and (max-width:768px){
+
+@media screen and (max-width:1024px){
+	.secret-sauce-cont .section-title {
+		text-align: left;
+		margin-bottom: 22px;
+		font-size: 32px;
+	}
+	.secret-sauce-cont p:not(:last-of-type) {
+		margin-bottom: 14px;
+	}
+	.magic-behind-para p {
+		font-size: 28px;
+	}
+}
+
+@media screen and (max-width:991px){
 	.site-nav {
 	    position: fixed;
 	    top: 0;
@@ -193,5 +296,99 @@
 	.toggle .site-nav {
     	transform: translateX(0);
 	}
+	.client-story-wrap .grid {
+		grid-template-columns: 1fr 1fr;
+	}
+	.secret-sauce-wrap .grid {
+		grid-template-columns: 100%;
+	}
+	.secret-sauce-wrap .grid .item:nth-child(1) {
+		grid-row: 2;
+	}
+	.secret-sauce-img {
+		max-width: 300px;
+	}
+	.how-it_works {
+		padding: 120px 0 120px;
+	}
+	.testimonial-card .card_img {
+		width: 200px;
+		height: 200px;
+	}
+	.plans-box .grid {
+		grid-template-columns: 100%;
+		grid-gap: 40px;
+	}
+	.plan-card.preminum {
+		margin: 0;
+	}
+	.training-wrap .grid {
+		grid-template-columns: 100%;
+	}
+	.training_img {
+		min-height: 400px;
+	}
+	.comparison-content {
+		overflow: hidden;
+	}
+	.comparison-content .grid {
+		grid-template-columns: 100%;
+		grid-template-rows: auto 50px auto;
+	}
+	.comparison-vs-img {
+		max-width: 50px;
+		transform: rotate(90deg);
+		margin: 0 auto;
+	}
+	.comparison-vs-img .test-vs {
+		left: 6px;
+	}
+	.comparison-vs-img .test-vs span {
+		transform: rotate(-90deg);
+	}
+	.client-story-wrap {
+		padding: 34px;
+	}
+
+	.plans-box-content {
+		grid-template-columns: 100%;
+		grid-gap: 30px;
+	}
+	.plan-card {
+		margin-top: 0;
+	}
+	.plans-warp {
+		padding: 52px 24px;
+	}
+	.client-story-card {
+		padding: 24px;
+	}
+	.client-story-card h3 {
+		font-size: 24px;
+	}
+	.client-story-card button {
+		font-size: 14px;
+	}
+	.client-story-card a {
+		font-size: 14px;
+	}
+	.plan-card-body {
+		padding: 24px;
+	}
+	.training_content {
+		padding: 24px;
+	}	
+}
+@media screen and (max-width:768px){
+	.primary-btn {
+		font-size: 14px;
+		padding: 10px 24px;
+	}
+	.item.timeline-child-right {
+		transform: translateX(-85%);
+	}
+	.item.timeline-child-left {
+		transform: translateX(85%);
+	}	
 }
 

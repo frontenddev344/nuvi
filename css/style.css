@@ -175,7 +175,7 @@ p{
 .menu-toggle .bar-1,.bar-2,.bar-3{
     width: 2.5rem;
     height: 2px;
-    background-color: #333;
+    background-color: #fff;
     margin: 0.6rem 0;
     transition: all 0.3s linear;
     display: block;
@@ -532,7 +532,6 @@ span[style="--i:6;"] {
 .plans {
     padding-top: 124px;
     position: relative;
-    overflow-x: hidden;
 }
 .plans-bg {
     position: absolute;
@@ -625,6 +624,7 @@ span[style="--i:6;"] {
 .plans-box .grid {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
+    overflow: hidden;
 }
 
 .plan-card {
@@ -675,8 +675,7 @@ span[style="--i:6;"] {
     color:inherit;
     font-family: Helvetica;
     font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 140%;
 }
 
@@ -865,6 +864,7 @@ span[style="--i:6;"] {
     position: relative;
     isolation: isolate;
     cursor: pointer;
+    height: 100%;
 }
 .client-story-card button {
     border-radius: 24px;
@@ -1064,6 +1064,7 @@ img#Twitter {
 }
 .comparison-content {
     margin: 91px 0 0;
+    position: relative;
 }
 .comparison-list ul {
     display: flex;

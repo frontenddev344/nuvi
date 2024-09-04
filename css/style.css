@@ -240,6 +240,8 @@ span.highlight {
     transform: translate(-50%, 0%);
     text-align: center;
     z-index: 1;
+    width: 100%;
+    max-width: 900px;
 }
 .banner-content h1 {
     color: #FFF;
@@ -252,6 +254,11 @@ span.highlight {
     max-width: 738px;
     margin: 0 auto 44px;
     color: #fff;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 140%;
+    letter-spacing: -0.64px;
 }
 .primary-btn {
     color: #FFF;
@@ -335,6 +342,13 @@ span.highlight {
 }
 
 /* magic-behind start  */
+.magic-behind{
+    overflow: hidden;
+}
+.magic-behind .container {
+    width: 90%;
+    max-width: 100%;
+}
 .timeline {
     margin: 96px 0 0;
 }
@@ -456,7 +470,7 @@ span[style="--i:6;"] {
 .timeline-card-content {
     padding: 32px;
     position: absolute;
-    bottom: -62px;
+    top: 155px;
     transition: all 0.3s linear;
 }
 .timeline-card-content h4 {
@@ -486,7 +500,7 @@ span[style="--i:6;"] {
     border-radius: 0;
 }
 .timeline-card:hover .timeline-card-content {
-    bottom: 0;
+    top: 80px;
 }
 .timeline-card:hover .timeline-card-content h4 {
     color: #fff;
@@ -517,6 +531,7 @@ span[style="--i:6;"] {
 .plans {
     padding-top: 124px;
     position: relative;
+    overflow-x: hidden;
 }
 .plans-bg {
     position: absolute;
@@ -911,6 +926,10 @@ span[style="--i:6;"] {
 .secret-sauce {
     padding: 272px 0 80px;
     position: relative;
+}
+.secret-sauce .container {
+    max-width: 100%;
+    width: 90%;
 }
 .secret-curve-shape {
     position: absolute;

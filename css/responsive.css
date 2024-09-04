@@ -1,4 +1,18 @@
-/*media queries start*/
+
+@media screen and (max-width:1750px){
+	.timeline .grid {
+		grid-gap: 50px;
+	}
+	/* .secret-sauce .container {
+		width: 95%;
+	} */
+}
+@media screen and (max-width:1600px){
+	.timeline-card {
+		width: 450px;
+		height: 400px;
+	}
+}
 @media screen and (max-width:768px){
 	.site-nav {
 	    position: fixed;

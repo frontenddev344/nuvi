@@ -981,7 +981,7 @@ span[style="--i:6;"] {
     background: #D1262B;
     padding: 32px;
     display: flex;
-    flex-wrap: wrap;
+    gap: 10px;
     justify-content: space-between;
     align-items: center;
     margin-top: 44px;
@@ -1137,6 +1137,7 @@ img#Twitter {
 .inverting-sec .grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin: 84px 0 0;
+    grid-gap: 10px;
 }
 .inverting-sec h2 {
     color: #FFF;

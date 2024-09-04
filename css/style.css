@@ -76,7 +76,7 @@ p{
 }
 .container {
     width: 100%;
-    max-width: 1672px;
+    max-width: 1701px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -270,7 +270,6 @@ span.highlight {
     border: 2px solid transparent;
     color:var(--black);
     transform: scale(1.05);
-    will-change: transform;
 }
 .primary-btn::before {
     background-color:#fff;
@@ -347,10 +346,11 @@ span.highlight {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    grid-row-gap: 400px;
+    grid-row-gap: 455px;
 }
 .item.timeline-child-left {
     align-self: center;
+    margin-top: 280px;
 }
 .timeline-content.t_left .timeline-card {
    text-align: right;
@@ -363,6 +363,7 @@ span.highlight {
 }
 .timeline-shapes-solid {
     position: relative;
+    z-index: 1;
 }
 .timeline-numb {
     display: flex;
@@ -376,7 +377,7 @@ span.highlight {
 .timeline-numb span {
     position: absolute;
     offset-path: path("M226.5 0V180.211C226.5 265.643 187.345 346.363 120.25 399.25L83.4766 428.236C39.6035 462.818 14 515.601 14 571.465V571.465C14 613.829 28.7482 654.871 55.7125 687.546L177.881 835.585C209.31 873.67 226.5 921.507 226.5 970.885V970.885C226.5 1020.4 209.213 1068.37 177.622 1106.5L65.3228 1242.05C32.152 1282.09 14 1332.45 14 1384.45V1384.45C14 1432.53 29.5252 1479.32 58.2648 1517.87L179.301 1680.2C209.946 1721.3 226.5 1771.19 226.5 1822.46V1822.46C226.5 1871.3 211.474 1918.96 183.462 1958.97L53.2272 2144.97C27.6952 2181.44 14 2224.88 14 2269.39V2269.39C14 2324.7 35.1239 2377.92 73.0534 2418.17L164.434 2515.14C204.298 2557.44 226.5 2613.37 226.5 2671.5V2671.5");
-    offset-distance: calc((var(--i) - 1)* 445.33px);
+    offset-distance: calc((var(--i) - 1)* 505.33px);
     transform: rotate(calc((var(--i))* -90deg));
     width: 60px;
     aspect-ratio: 1;
@@ -395,6 +396,27 @@ span.highlight {
 span[style="--i:1;"] {
     offset-distance: 80px;
 }
+span[style="--i:2;"] {
+    transform: rotate(-90deg);
+    offset-distance: calc((var(--i) - 1)* 505.33px + 130px);
+}
+span[style="--i:3;"] {
+    transform: rotate(-90deg);
+    offset-distance: calc((var(--i) - 1)* 505.33px + 110px);
+}
+span[style="--i:4;"] {
+    transform: rotate(-90deg);
+    offset-distance: calc((var(--i) - 1)* 505.33px + 80px);
+}
+span[style="--i:5;"] {
+    transform: rotate(-90deg);
+    offset-distance: calc((var(--i) - 1)* 505.33px + 70px);
+}
+span[style="--i:6;"] {
+    transform: rotate(-104deg);
+    offset-distance: calc((var(--i) - 1)* 505.33px + 50px);
+}
+
 .timeline-shapes-dotted {
     position: absolute;
     left: 0;
@@ -491,11 +513,14 @@ span[style="--i:1;"] {
 /* magic-behind end  */
 /* plans start  */
 .plans {
-    background-image: url("../images/plans-bg.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     padding-top: 124px;
+    position: relative;
+}
+.plans-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 .plans-warp {
     padding: 52px;
@@ -533,6 +558,41 @@ span[style="--i:1;"] {
     font-weight: 400;
     line-height: 140%;
     width: max-content;
+    position: relative;
+}
+.check-mark li::before {
+    content: attr(data-title);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: max-content;
+    font-size: 18px;
+    background: #111111cc;
+    color: #fff;
+    padding: 24px;
+    max-width: 300px;
+    border-radius: 12px;
+    line-height: 1.5;
+    transform: translate(100%, -50%);
+    transition: all 0.2s linear;
+    opacity: 0;
+    visibility:hidden;
+}
+.check-mark li::after {
+    content: "";
+    position: absolute;
+    border: 8px solid #111111cc;
+    border-top: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    transition: all 0.2s linear;
+    right: 0;
+    opacity: 0;
+    visibility:hidden;
+}
+.check-mark li:hover::before, .check-mark li:hover::after {
+    opacity: 1;
+    visibility: visible;
 }
 .plan-card ul li:not(:last-child) {
     margin-bottom: 12px;
@@ -552,6 +612,7 @@ span[style="--i:1;"] {
 .plan-card {
     border-radius: 2px 0px 0px 2px;
     border: 4px solid #EFEFEF;
+    margin-top: 44px;
 }
 
 .plan-card h4 {
@@ -624,9 +685,17 @@ span[style="--i:1;"] {
     color: #12C177;
     font-weight: 400;
 }
+.appointment-engine p {
+    color: #111;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 140%;
+}
 .plan-card.preminum {
     border-color: var(--orange);
     margin-left: -4px;
+    margin-top: 0;
 }
 .plan-card.preminum .plan-card-footer {
     background: var(--orange);
@@ -729,6 +798,7 @@ span[style="--i:1;"] {
     background: #FFF;
     box-shadow: 0px 6px 12px 0px rgba(17, 17, 17, 0.15);
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 .how-card:hover {
     background: var(--orange);
@@ -1482,7 +1552,7 @@ img#Twitter {
     justify-content: space-between;
     align-items: center;
     padding: 12px 24px;
-    margin: 55px 0 0;
+    margin: 40px 0 0;
 }
 .pagination ul {
     display: flex;
@@ -1503,15 +1573,16 @@ img#Twitter {
     line-height: 22.4px;
     letter-spacing: -0.02em;
     text-align: center;
+    transition: all 0.2s linear;
 }   
-.pagination ul a.active {
+.pagination ul a.active, .pagination ul a:hover {
     background: var(--orange);
     box-shadow: 0px 1.867px 1.867px 0px rgba(255, 205, 206, 0.25) inset;
     color: #fff;
     border-color: var(--orange);
 }
 .pagination button {
-    background: var(--White, #FFF);
+    background:#FFF;
     box-shadow: 0px 1px 2px 0px rgba(14, 24, 41, 0.05);
     transition: all 0.2s linear;
     border: 2px solid #EFEFEF;
@@ -1524,10 +1595,24 @@ img#Twitter {
 }
 
 .pagination button:hover {
-    background: #D30000;
+    background: var(--orange);
+    border-color: var(--orange);
 }
 .pagination button:hover svg path {
     stroke: #fff !important;
 }
 
 /* pagination start  */
+
+/* tooltip  */
+.tooltip .tooltip-inner {
+    background-color: var(--black); /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 24px; /* Adjust padding */
+    font-size: 16px; /* Adjust font size */
+    border-radius: 6px; /* Rounded corners */
+    font-family: var(--helvetica);
+    max-width:300px;
+    text-align: left;
+  }
+  

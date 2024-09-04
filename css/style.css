@@ -737,10 +737,11 @@ span[style="--i:6;"] {
 .training_content p {
     color: #111;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 140%;
     text-align: left;
     margin: 32px 0;
+    max-width: 800px;
 }
 .training-wrap .grid {
     grid-template-columns: 2fr 1fr;
@@ -1400,6 +1401,14 @@ img#Twitter {
 }
 .how-card-modal .modal-dialog {
     max-width: 700px;
+}
+.client-story-card-modal li:not(:last-child) {
+    border-bottom: 1px solid #EFEFEF;
+    padding-bottom: 64px;
+    margin-bottom: 64px;
+}
+.client-story-card-modal .modal-dialog {
+    max-width: 1114px;
 }
 /* blog page start  */
 .blog-banner {

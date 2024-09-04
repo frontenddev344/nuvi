@@ -389,6 +389,9 @@
 	}
 	.item.timeline-child-left {
 		transform: translateX(85%);
+	}
+	.client-story-wrap .grid {
+		grid-gap: 22px;
 	}	
 }
 

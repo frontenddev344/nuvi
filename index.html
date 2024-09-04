@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="fonts/helvetica.css">
     <link rel="stylesheet" href="fonts/SangBleu-Sunrise/SangBleuSunrise.css">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -433,27 +433,27 @@
             <div class="container">
                 <h2 class="section-title">How It <span class="highlight">Works</span>:</h2>
                 <div class="how-it_works-box">
-                    <div class="how-card">
+                    <div class="how-card" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                         <h4>01</h4>
                         <p>Discovery <br> Call</p>
                     </div>
-                    <div class="how-card">
+                    <div class="how-card" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                         <h4>02</h4>
                         <p>Marketing Plan Creation</p>
                     </div>
-                    <div class="how-card">
+                    <div class="how-card" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                         <h4>03</h4>
                         <p>Implementation</p>
                     </div>
-                    <div class="how-card">
+                    <div class="how-card" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                         <h4>04</h4>
                         <p>Monitoring <br> and Optimization</p>
                     </div>
-                    <div class="how-card">
+                    <div class="how-card" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                         <h4>05</h4>
                         <p>Weekly Call & Reporting</p>
                     </div>
-                    <div class="how-card">
+                    <div class="how-card" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                         <h4>06</h4>
                         <p>Scaling</p>
                     </div>
@@ -716,6 +716,29 @@
             </div>
        </footer>
        <!-- footer end  -->
+    <!-- modal and popup's start  -->
+      <!-- how-card-modal start -->
+      <div class="how-card-modal">
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                 <h4>Add a new user</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 id="modal-heading">hello</h4>
+                    <p id="modal-para">hiii</p>
+                </div>
+                <div class="modal-footer">
+                
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+     <!-- how-card-modal end -->
+     <!-- modal and popup's end  -->
     <script src="js/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>

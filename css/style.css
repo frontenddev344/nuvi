@@ -387,6 +387,18 @@ span.highlight {
 .timeline-content.t_left  .timeline-video-container {
     margin-left: auto;
 }
+.timeline-content.t_right .timeline-video-container {
+    transform: translateX(32px);
+}
+.timeline-content.t_right .timeline-card:hover .timeline-video-container {
+    transform: translateX(0);
+}
+.timeline-content.t_left .timeline-video-container {
+    transform: translateX(-32px);
+}
+.timeline-content.t_left .timeline-card:hover .timeline-video-container {
+    transform: translateX(0);
+}
 .timeline-shapes {
     position: relative;
 }
@@ -628,6 +640,12 @@ span[style="--i:6;"] {
 .check-mark li:hover::before, .check-mark li:hover::after {
     opacity: 1;
     visibility: visible;
+}
+.check-mark li:hover svg {   
+     stroke: #ff7a00;
+}
+.check-mark li:hover svg path {
+    opacity: 1;
 }
 .plan-card ul li:not(:last-child) {
     margin-bottom: 12px;

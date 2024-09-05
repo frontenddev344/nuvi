@@ -690,5 +690,8 @@
 	}
 	.timeline-content.t_left .timeline-card {
     transform: translateX(100%);
-}
+	}
+	.blog-tab .nav-tabs .nav-link {
+		font-size: 12px;
+	}
 }

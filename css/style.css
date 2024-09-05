@@ -341,6 +341,12 @@ span.highlight {
     max-width: 1385px;
     overflow: hidden;
 }
+img.Calendar-Variant {
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+    width: 100%;
+}
 .calendar-sec-content img {
     border-radius: 20px;
 }

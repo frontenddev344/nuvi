@@ -988,6 +988,7 @@ span[style="--i:6;"] {
     font-weight: 300;
     line-height: 140%;
     text-align: left;
+    max-width: 720px;
 }
 .secret-sauce-cont p:not(:last-of-type) {
     margin-bottom: 44px;
@@ -1017,7 +1018,7 @@ span[style="--i:6;"] {
     font-size: 24px;
     font-weight: 400;
     line-height: 140%;
-    max-width: 460px;
+    max-width: 440px;
 }
 img#LinkedIn {
     top: -50px;

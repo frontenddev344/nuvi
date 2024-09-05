@@ -602,4 +602,10 @@
 		font-size: 24px;
 		width: 50px;
 	}
+	.timeline-card-content h4 {
+		font-size: 22px;
+	}
+	.timeline-card-content {
+		top: 95px;
+	}
 }

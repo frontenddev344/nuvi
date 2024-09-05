@@ -598,7 +598,7 @@ span[style="--i:6;"] {
 .check-mark li::before {
     content: attr(data-title);
     position: absolute;
-    right: 0;
+    right: -15px;
     top: 50%;
     width: max-content;
     font-size: 18px;
@@ -621,7 +621,7 @@ span[style="--i:6;"] {
     border-left: 8px solid transparent;
     border-bottom: 8px solid transparent;
     transition: all 0.2s linear;
-    right: 0;
+    right: -15px;
     opacity: 0;
     visibility:hidden;
 }

@@ -267,6 +267,9 @@
 	.training_content h4 {
 		font-size: 26px;
 	}
+	.blog-tab .nav-tabs .nav-link {
+		padding: 12px 24px;
+	}
 }
 
 @media screen and (max-width:1024px){
@@ -561,6 +564,13 @@
 	.modal-body p {
 		font-size: 18px;
 	}
+	.blog-tab .nav-tabs .nav-link {
+		padding: 8px 20px;
+		font-size: 14px;
+	}
+	.card-title {
+		font-size: 22px;
+	}
 }
 
 @media screen and (max-width:575px){
@@ -647,6 +657,15 @@
 	}
 	.modal-body p {
 		font-size: 16px;
+	}
+	.plans-box-content h3 {
+		font-size: 24px;
+	}
+	.plan-card h4 {
+		font-size: 22px;
+	}
+	.blog-tab-grid {
+		grid-template-columns: 100%;
 	}
 }
 

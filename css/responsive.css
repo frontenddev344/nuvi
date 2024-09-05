@@ -372,8 +372,11 @@
 		gap: 10px;
 	}
 	.comparison-list.bg-orange ul {
-		align-items: end;
+		align-items:center;
 		margin: 0 0 40px;
+	}
+	.comparison-list ul {
+		align-items:center;
 	}
 	.comparison-vs-img .test-vs {
 		left: 6px;
@@ -425,6 +428,34 @@
 	}
 	.training-wrap {
 		max-width: calc(100% - 52px);
+	}
+	.secret-sauce .container {
+		width: 100%;
+	}
+	.secret-sauce-img img {
+		width: 100%;
+	}
+	img#LinkedIn {
+		top: 0;
+		left: 80px;
+	}
+	img#YouTube {
+		right: 0;
+		top: 0;
+	}
+	img#Twitter {
+		left: 0;
+	}
+	img#Instagram {
+		right: 0;
+		bottom: 0;
+	}
+	img#Dribbble {
+		top: 160px;
+		right: 0;
+	}
+	img#Pinterest {
+		right: 0;
 	}	
 }
 @media screen and (max-width:768px){
@@ -506,6 +537,10 @@
 	}
 	.partner {
 		padding: 80px 0;
+	}
+	.site-footer .buttons .primary-btn {
+		padding: 10px 24px;
+		font-size: 12px;
 	}
 }
 

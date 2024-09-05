@@ -955,6 +955,13 @@ span[style="--i:6;"] {
     visibility: hidden;
     z-index: -1;
 }
+.hover-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0 0 0 /40%);
+    border-radius: inherit;
+}
 .client-story-card:hover .hover-img {
     opacity: 1;
     visibility: visible;

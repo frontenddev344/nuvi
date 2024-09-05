@@ -159,7 +159,7 @@
 		grid-column-gap: 40px;
 	}
 	.secret-sauce {
-		padding: 180px 0 80px;
+		padding: 100px 0 80px;
 	}
 	.footer-shape {
 		margin-bottom: -60px;
@@ -338,7 +338,7 @@
 		grid-row: 2;
 	}
 	.secret-sauce-img {
-		max-width: 300px;
+		max-width: 100%;
 	}
 	.how-it_works {
 		padding: 120px 0 120px;

@@ -283,11 +283,12 @@ span.highlight {
     overflow: hidden;
     text-shadow: 0 50px black;
     position: relative;
+    border: 2px solid transparent;
 }
 .primary-btn:hover{
     border: 2px solid transparent;
     color:var(--black);
-    transform: scale(1.05);
+    transform: scale(1);
 }
 .primary-btn::before {
     background-color:#fff;
@@ -317,6 +318,12 @@ span.highlight {
 }
 .primary-btn:hover span {
     transform: translateY(-50px);
+}
+.primary-btn.bg_white:hover {
+    color: #fff;
+}
+.primary-btn.bg_white:hover::before {
+    background-color: var(--orange);
 }
 /* site banner end */
 .calendar-sec {

@@ -527,6 +527,7 @@ span[style="--i:6;"] {
 
 .magic-behind-para {
     padding: 20px 0 158px;
+    position: relative;
 }
 .magic-behind-para p {
     color:var(--black);
@@ -537,6 +538,12 @@ span[style="--i:6;"] {
     line-height: 150%;
     max-width: 1400px;
     margin: 0 auto;
+}
+.magic-behind-para .shape {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 /* magic-behind end  */
 /* plans start  */
@@ -744,8 +751,9 @@ span[style="--i:6;"] {
 }
 /* training sec start  */
 .training {
-    padding: 245px 0;
+    padding: 0 0 245px;
     position: relative;
+    margin-top: 45px;
 }
 .training-shape {
     position: absolute;
@@ -757,6 +765,8 @@ span[style="--i:6;"] {
     border-radius: 2px;
     border: 4px solid #EFEFEF;
     background: #FFF;
+    max-width: calc(100% - 52px * 2);
+    margin: 0 auto;
 }
 .training_content {
     padding: 64px;
@@ -1257,7 +1267,7 @@ img#Twitter {
 }
 .footer-logo {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 35px;
     width: max-content;
 }
 .footer-top {
@@ -1273,6 +1283,11 @@ img#Twitter {
     flex-wrap: wrap;
     gap: 12px;
     align-items: center;
+}
+
+.site-footer .buttons .primary-btn {
+    padding: 14px 24px;
+    font-size: 14px;
 }
 
 .footer-social a {

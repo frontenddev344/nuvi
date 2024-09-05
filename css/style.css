@@ -776,6 +776,7 @@ span[style="--i:6;"] {
     font-size: 52px;
     font-weight: 400;
     line-height: 120%;
+    max-width: 423px;
 }
 .training_content p {
     color: #111;
@@ -1160,7 +1161,9 @@ img#Twitter {
     transform: translateX(-50%);
     z-index: -1;
 }
-
+.inverting-sec {
+    margin: 84px 0 0;
+}
 .inverting-sec .grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin: 84px 0 0;

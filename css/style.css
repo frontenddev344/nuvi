@@ -171,7 +171,9 @@ p{
 .site-nav li a.active::after {
     opacity: 1;
 }
-
+.site-nav li a.active {
+    color: var(--orange);
+}
 .menu-toggle{
     display: none;
 }
@@ -329,7 +331,7 @@ span.highlight {
     border: 24px solid rgba(255, 255, 255, 0.10);
     box-shadow: 0px 4px 164px 0px rgba(0, 0, 0, 0.10);
     margin-bottom: 120px;
-    max-width: 1335px;
+    max-width: 1385px;
     overflow: hidden;
 }
 .calendar-sec-content img {
@@ -648,6 +650,10 @@ span[style="--i:6;"] {
     font-weight: 400;
     line-height: 120%;
     margin: 0 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
 }
 .plan-card p {
     color: rgb(17 17 17 / 70%);
@@ -985,6 +991,7 @@ span[style="--i:6;"] {
 .secret-sauce-wrap .grid .item:nth-child(3) {
     text-align: right;
 }
+
 .partner-highlight {
     border-radius: 12px;
     background: #D1262B;
@@ -1021,7 +1028,7 @@ img#Instagram {
 img#Facebook {
     top: 50%;
     transform: translateY(-50%);
-    left: 60px;
+    left: 70px;
 }
 img#Messenger {
     left: 70px;
@@ -1278,6 +1285,10 @@ img#Twitter {
     justify-content: center;
     border-radius: 50%;
     font-size: 18px;
+    transition: all 0.2s linear;
+}
+.footer-social a:hover {
+    background: var(--orange);
 }
 .footer-middle {
     margin-top: 48px;

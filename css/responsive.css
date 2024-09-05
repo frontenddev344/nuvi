@@ -11,6 +11,18 @@
 	.blog-tab .nav-tabs .nav-link {
 		white-space: nowrap;
 	}
+	.secret-sauce .container {
+		max-width: 100%;
+		width: 80%;
+	}
+	img#Instagram {
+		right: -20px;
+		bottom: 0;
+	}
+	img#YouTube {
+		right: -15px;
+		top: -60px;
+	}
 }
 @media screen and (max-width:1600px){
 	.timeline-card {
@@ -257,6 +269,9 @@
 	.comparison .sub-title {
 		font-size: 24px;
 	}
+	.training_content h4 {
+		font-size: 26px;
+	}
 }
 
 @media screen and (max-width:1024px){
@@ -478,6 +493,21 @@
 	.blog-banner .banner-content > p {
 		font-size: 20px;
 		line-height: normal;
+	}
+	.section-title {
+		font-size: 32px;
+	}
+	.sub-title {
+		font-size: 20px;
+	}
+	.magic-behind-para {
+		padding: 20px 0 60px;
+	}
+	.comparison .heading h2 {
+		font-size: 32px;
+	}
+	.partner {
+		padding: 80px 0;
 	}
 }
 

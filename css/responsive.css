@@ -48,9 +48,6 @@
 	.section-title {
 		font-size: 72px;
 	}
-	.training {
-		padding: 180px 0;
-	}
 	.card-title {
 		font-size: 28px;
 	}
@@ -149,9 +146,7 @@
 	.training_content p {
 		font-size: 22px;
 	}
-	.training {
-		padding: 120px 0;
-	}
+	
 	.secret-sauce-wrap .grid {
 		grid-template-columns: 1fr 1fr;
 		grid-row-gap: 40px;
@@ -427,6 +422,9 @@
 	}
 	.secret-sauce-cont p {
 		font-size: 20px;
+	}
+	.training-wrap {
+		max-width: calc(100% - 52px);
 	}	
 }
 @media screen and (max-width:768px){

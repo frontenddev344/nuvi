@@ -124,7 +124,7 @@ p{
 	flex-wrap: wrap;
 	justify-content: space-between;
     align-items: center;
-
+    padding: 0 20px;
 }
 
 .site-logo img {
@@ -158,14 +158,18 @@ p{
     transition: all 0.3s linear;
     background-image: url("../images/nav-shape.svg");
     background-repeat: no-repeat;
-    background-position: center;
-    inset: 0;
+    background-position: 100% 100%;
+    background-size: 100% 100%;
+    inset: -20px;
+    top: -26px;
     opacity: 0;
 }
 
 .site-nav li a:hover::after{
-	width: 100%;
 	transition: all 0.3s linear;
+}
+.site-nav li a.active::after {
+    opacity: 1;
 }
 
 .menu-toggle{
@@ -242,6 +246,7 @@ span.highlight {
     z-index: 1;
     width: 100%;
     max-width: 900px;
+    padding: 0 10px;
 }
 .banner-content h1 {
     color: #FFF;
@@ -249,6 +254,7 @@ span.highlight {
     font-size: 124px;
     font-weight: 400;
     line-height: 110%;
+    text-wrap: balance;
 }
 .banner-content > p {
     max-width: 738px;
@@ -259,6 +265,7 @@ span.highlight {
     font-weight: 300;
     line-height: 140%;
     letter-spacing: -0.64px;
+    text-wrap: balance;
 }
 .primary-btn {
     color: #FFF;
@@ -333,6 +340,8 @@ span.highlight {
     top: 20px;
     left: 8px;
     transition: all 0.4s linear;
+    max-width: 390px;
+    height: 100%;
 }
 .calendar-sec-content:hover .stick {
     transform: rotate(5deg) translate(10px, -15px);
@@ -381,7 +390,7 @@ span.highlight {
 }
 .timeline-shapes-solid {
     position: relative;
-    z-index: 1;
+    z-index: -1;
 }
 .timeline-numb {
     display: flex;
@@ -1043,7 +1052,6 @@ img#Twitter {
     color: #FFF;
     font-family: "SangBleu Sunrise";
     font-size: 52px;
-    font-style: normal;
     font-weight: 400;
     line-height: 120%;
     text-align: center;
@@ -1250,6 +1258,7 @@ img#Twitter {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 .site-footer .buttons {
@@ -1376,6 +1385,7 @@ img#Twitter {
     font-size: 14px;
     font-weight: 400;
     line-height: 140%;
+    margin: 0;
 }
 
 /* modal start  */
@@ -1455,7 +1465,7 @@ img#Twitter {
 }
 .blog-tab-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(530px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 24px;
 }
 .card {
@@ -1465,9 +1475,7 @@ img#Twitter {
     border: 4px solid #EFEFEF;
     transition: all 0.2s linear;
 }
-.card:hover {
-    border-color: var(--orange);
-}
+
 .card-header {
     background: transparent;
     color: var(--black);
@@ -1550,9 +1558,25 @@ img#Twitter {
     text-decoration: none;
     font-weight: bold;
 }
+.card:hover {
+    border-color: var(--orange);
+}
+.card:hover .card-footer {
+    background: var(--orange);
+}
 
+.card:hover .card-footer .read-more {
+    color: #fff;
+}
+
+.card:hover .card-footer .date {
+    color: #fff;
+}
+.card:hover .card-footer .date img[alt="mini-calender"] {
+    filter: brightness(0) invert(1);
+}
 .blog-tab .nav-tabs .nav-link {
-    padding: 24px 44px;
+    padding: 24px 36px;
     color: #111;
     text-align: center;
     font-family: Helvetica;

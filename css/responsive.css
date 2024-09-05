@@ -679,6 +679,12 @@
 	.card-footer {
 		padding: 24px 20px;
 	}
+	.blog-tab .nav-tabs {
+		padding: 30px 0;
+	}
+	.blog-tab {
+		margin: 10px 0 0;
+	}
 }
 
 @media screen and (max-width:480px){

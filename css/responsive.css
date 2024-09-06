@@ -725,6 +725,9 @@
 	.slider-button svg {
 		max-width: 110px;
 	}
+	.calender-container {
+		margin-bottom: 100px;
+	}
 }
 
 @media screen and (max-width:480px){
@@ -757,5 +760,8 @@
 	}
 	.calender-container {
 		--position: 80%;
+	}
+	.calender-container {
+		margin-bottom: 60px;
 	}
 }

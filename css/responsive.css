@@ -725,4 +725,19 @@
 	.slider-button svg {
 		max-width: 70px;
 	}
+	.slider-button {
+		left: calc(var(--position) / 3.5 );
+	}
+	.calender-container {
+		--position: 40%;
+	}
+}
+
+@media screen and (max-width:420px){
+	.slider-button {
+		left: calc(var(--position) / 9 );
+	}
+	.calender-container {
+		--position: 80%;
+	}
 }

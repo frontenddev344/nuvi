@@ -619,6 +619,9 @@ span[style="--i:6;"] {
     width: max-content;
     position: relative;
 }
+.check-mark li:not(:last-child) {
+    margin-bottom: 12px;
+}
 .check-mark li::before {
     content: attr(data-title);
     position: absolute;

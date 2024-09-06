@@ -1767,6 +1767,7 @@ img#Twitter {
     margin-bottom: 120px;
     max-width: 1385px;
     overflow: hidden;
+        --rotate:0deg;
 }
   
 
@@ -1834,5 +1835,10 @@ img#Twitter {
   }
   .image-container .slider-image {
     border-radius: 20px 20px 80px 80px;
+}
+
+.slider-button svg{
+
+    transform: rotate(calc(var(--rotate),deg) );
 }
   /* calender-container end  */

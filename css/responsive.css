@@ -758,6 +758,9 @@
 	.calender-container {
 		--position: 40%;
 	}
+	.timeline-content.t_right .timeline-card:last-child {
+		margin-top: 100px;
+	}
 }
 
 @media screen and (max-width:420px){

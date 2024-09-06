@@ -1748,7 +1748,7 @@ img#Twitter {
   }
   
 
-  /* test  */
+  /* calender-container start  */
 .calender-main{
     display: grid;
     place-items: center;
@@ -1757,7 +1757,7 @@ img#Twitter {
 .calender-container {
     display: grid;
     place-content: center;
-    --position: 8%;
+    --position: 12%;
     position: relative;
     width: 100%;
     margin: 0 auto;
@@ -1781,7 +1781,8 @@ img#Twitter {
   .image-before {
     position: absolute;
     inset: 0;
-    width: var(--position);
+    /* width: var(--position); */
+    width: 100%;
     /* filter: grayscale(100%) */
   }
   
@@ -1805,11 +1806,12 @@ img#Twitter {
     inset: 0;
     width: .2rem;
     height: 100%;
-    background-color: #fff;
+    /* background-color: #fff; */
     /* z-index: 10; */
     left: var(--position);
     transform: translateX(-50%);
     pointer-events: none;
+    opacity: 0;
   }
   
   .slider-button {
@@ -1823,3 +1825,14 @@ img#Twitter {
     pointer-events: none;
     /* z-index: 100; */
   }
+
+
+
+  .image-before {
+    opacity: 0; 
+    /* transition: opacity 0.1s ease-in-out; */
+  }
+  .image-container .slider-image {
+    border-radius: 20px 20px 80px 80px;
+}
+  /* calender-container end  */

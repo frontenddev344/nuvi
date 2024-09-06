@@ -8,35 +8,6 @@ $(document).ready(function(){
   });
 
 
-
-  
-  // const CalContainer = document.querySelector('.calender-container');
-  // document.querySelector('.slider').addEventListener('input', (e) => {
-  //   CalContainer.style.setProperty('--position', `${e.target.value}%`);
-  // })
-
-  // const CalContainer = document.querySelector('.calender-container');
-  // const imageBefore = document.querySelector('.image-before');
-  // const slider = document.querySelector('.slider');
-  
-  // slider.addEventListener('input', (e) => {
-  //   const value = e.target.value;
-  
-  //   // Set the custom property for positioning
-  //   CalContainer.style.setProperty('--position', `${value}%`);
-  
-  //   // Map the slider value to opacity (0 to 1)
-  //   const opacityValue = value / 100;
-  //   imageBefore.style.opacity = opacityValue;
-  // });
-  
-  
-//  let sliderbtn = document.querySelector(".slider-button svg") 
-// CalContainer.addEventListener("mousemove", function(move){
-
-// });
-
-
 const CalContainer = document.querySelector('.calender-container');
 const imageBefore = document.querySelector('.image-before');
 const slider = document.querySelector('.slider');

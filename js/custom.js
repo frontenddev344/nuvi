@@ -20,7 +20,7 @@ slider.addEventListener('input', (e) => {
 
   // Map the slider value to opacity (0 to 1)
   const opacityValue = value / 100;
-  imageBefore.style.opacity = opacityValue;
+  imageBefore.style.opacity = opacityValue - 0.1;
 
   // Rotate the slider handle based on the slider value
   const rotationValue = (value / 100) * 360; // Rotate from 0 to 360 degrees

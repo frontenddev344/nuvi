@@ -843,6 +843,11 @@ span[style="--i:6;"] {
     line-height: 120%;
     margin: 12px 0 52px;
 }
+.training_img .primary-btn.bg_white {
+    width: 100%;
+    max-width: 393px;
+    text-align: center;
+}
 /* training sec end  */
 /* how-it_works start */
 .how-it_works {

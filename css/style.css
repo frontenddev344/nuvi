@@ -830,7 +830,7 @@ span[style="--i:6;"] {
 }
 .training_img {
     height: 100%;
-    background: url("../images/choose-plan-bg.png") var(--orange);
+    background: url(../images/choose-plan-bg.png) #ff6d22;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

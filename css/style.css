@@ -772,6 +772,11 @@ span[style="--i:6;"] {
 .plan-card.preminum .plan-card-footer {
     background: var(--orange);
 }
+.plan-card-footer .primary-btn.bg_white {
+    width: 100%;
+    max-width: 365px;
+    text-align: center;
+}
 .plan-card.preminum .plan-card-footer p {
     color: #fff;
 }

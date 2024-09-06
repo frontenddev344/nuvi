@@ -13,7 +13,7 @@ const imageBefore = document.querySelector('.image-before');
 const slider = document.querySelector('.slider');
 
 slider.addEventListener('input', (e) => {
-  const value = e.target.value < 10 ? 10 : e.target.value > 78 ? 78 : e.target.value;
+  const value = e.target.value < 10 ? 10 : e.target.value > 74 ? 74 : e.target.value;
   
   // Set the custom property for positioning
   CalContainer.style.setProperty('--position', `${value}%`);

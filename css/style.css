@@ -1845,8 +1845,9 @@ img#Twitter {
     border-radius: 20px 20px 80px 80px;
 }
 
-.slider-button svg{
-
+.slider-button svg {
     transform: rotate(calc(var(--rotate),deg) );
+    max-width: 330px;
+    height: 1210px;
 }
   /* calender-container end  */

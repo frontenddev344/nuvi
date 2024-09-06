@@ -293,6 +293,12 @@
 	.slider-button svg {
 		max-width: 60%;
 	}
+	.slider-button {
+		left: calc(var(--position) / 1.2 );
+	}
+	.calender-container {
+		--position: 15%;
+	}	
 }
 
 @media screen and (max-width:991px){
@@ -471,6 +477,12 @@
 	}
 	.slider-button svg {
 		max-width: 160px;
+	}
+	.slider-button {
+		left: calc(var(--position) / 1.2 );
+	}
+	.calender-container {
+		--position: 15%;
 	}	
 }
 @media screen and (max-width:768px){
@@ -582,6 +594,12 @@
 	}
 	.card-title {
 		font-size: 22px;
+	}
+	.slider-button {
+		left: calc(var(--position) / 1.5 );
+	}
+	.calender-container {
+		--position: 30%;
 	}
 }
 

@@ -322,7 +322,7 @@ span.highlight {
 .primary-btn.bg_white:hover {
     color: #fff;
 }
-.primary-btn.bg_white:hover::before {
+.primary-btn.bg_white::before {
     background-color: var(--orange);
 }
 /* site banner end */

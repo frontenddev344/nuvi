@@ -698,6 +698,9 @@ span[style="--i:6;"] {
     align-items: center;
     gap: 10px;
 }
+.plan-card h4 .primary-btn.yellow-bg {
+    pointer-events: none;
+}
 .plan-card p {
     color: rgb(17 17 17 / 70%);
     font-family: Helvetica;

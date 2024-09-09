@@ -28,10 +28,6 @@ $(document).ready(function() {
     }
   });
 
-  // Handle click event to switch active class
-  $(".site-nav li a").click(function(){
-    $(this).addClass("active").parent().siblings().find("a").removeClass("active");
-  });
 });
 
 

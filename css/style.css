@@ -8,10 +8,6 @@
 
 }
 
-body {
-    font-family:var(--helvetica);
-}
-
 :root {
    
     --black:#111111;
@@ -20,6 +16,13 @@ body {
     --helvetica:'Helvetica';
     --roboto:"Roboto", sans-serif;
     
+}
+body {
+    font-family:var(--helvetica);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 ul {

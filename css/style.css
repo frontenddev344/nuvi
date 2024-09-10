@@ -1372,7 +1372,7 @@ img#Twitter {
     margin-bottom: 70px;
 }
 .footer-middle .grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 100%;
 }
 
 .footer-middle .grid h4 {
@@ -1475,7 +1475,34 @@ img#Twitter {
     line-height: 140%;
     margin: 0;
 }
-
+.iqsay_logo {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.iqsay_logo a {
+    max-width: 150px;
+    position: relative;
+}
+.iqsay_logo a img {
+    transition: ease all 0.4s;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+.iqsay_logo a img.with_hvr {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.iqsay_logo a:hover img {
+    filter: none;
+}
+.iqsay_logo a:hover img.with_hvr {
+    opacity: 1;
+    visibility: visible;
+}
 /* modal start  */
 .btn-close {
     background: transparent url("../images/cross-icon.svg") center/1em auto no-repeat;

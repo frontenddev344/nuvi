@@ -224,7 +224,8 @@ span.highlight {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgb(0 0 0 / 35%);
+    background: rgb(55 47 39 / 60%);
+
 }
 
 .banner-curve-shape {
@@ -1364,9 +1365,13 @@ img#Twitter {
     font-size: 18px;
     transition: all 0.2s linear;
 }
+.footer-social a svg path {
+    fill: currentColor;
+}
 .footer-social a:hover {
     background: var(--orange);
 }
+
 .footer-middle {
     margin-top: 48px;
     margin-bottom: 70px;
@@ -1989,6 +1994,21 @@ img#Twitter {
 .article-banner .banner-content {
     max-width: 1400px;
 }
+.article-banner .footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+.article-banner .footer-social a:hover {
+    background: var(--orange);
+    color: #fff;
+}
+.article-banner .footer-social a {
+    background: #FFF;
+    color: var(--black);
+    font-size: 20px;
+}   
 .article-banner-btn {
     display: flex;
     justify-content: center;

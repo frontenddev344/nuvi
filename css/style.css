@@ -2155,12 +2155,22 @@ img#Twitter {
     text-align: right;
 }
 .tag-social-bar .footer-social {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
 }
-
 .tag-social-bar .footer-social a {
     background: #F7F7F7;
     color: var(--black);
+    font-size: 20px;
+}
+.tag-social-bar .footer-social a svg path {
+    fill: currentColor;
+}
+.tag-social-bar .footer-social a:hover {
+    background: var(--orange);
+    color: #fff;
 }
 
 .tag-social-bar-wrap .date {
@@ -2170,5 +2180,5 @@ img#Twitter {
     color: rgb(17 17 17 / 50%);
 }
 .recommend-article .blog-tab-grid {
-    margin-top: 64px;
+    margin: 64px 0 160px;
 }

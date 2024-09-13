@@ -1989,6 +1989,25 @@ img#Twitter {
 .article-banner .banner-content {
     max-width: 1400px;
 }
+.article-banner-btn {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+    margin: 0 0 52px;
+}
+.article-banner-btn a {
+    padding: 12px 24px;
+    border-radius: 124px;
+    background: #FFF;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 140%;
+}
 .article-banner .banner-curve-shape {
     position: static;
     opacity: 0.1;
@@ -2008,6 +2027,7 @@ img#Twitter {
     font-style: normal;
     font-weight: 400;
     line-height: 110%;
+    margin: 0 0 32px;
 }
 .secure-pay {
     padding: 60px 0;
@@ -2125,11 +2145,30 @@ img#Twitter {
     font-weight: 300;
 }
 .tag-social-bar-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    border-top: 2px solid #EFEFEF;
+    padding: 44px 0 124px;
 }
+.tag-social-bar-wrap .card-tags {
+    text-align: right;
+}
+.tag-social-bar .footer-social {
+    text-align: center;
+}
+
 .tag-social-bar .footer-social a {
     background: #F7F7F7;
     color: var(--black);
+}
+
+.tag-social-bar-wrap .date {
+    font-size: 14px;
+    display: inline-flex;
+    gap: 12px;
+    color: rgb(17 17 17 / 50%);
+}
+.recommend-article .blog-tab-grid {
+    margin-top: 64px;
 }

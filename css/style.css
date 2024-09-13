@@ -2111,7 +2111,7 @@ img#Twitter {
 }
 .article-vertical {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1.3fr;
     grid-gap: 72px;
     align-items: center;
     padding: 24px 0;
@@ -2127,7 +2127,8 @@ img#Twitter {
 
 .article-vertical-img {
     border-radius: 12px;
-    width: 480px;
+    width: 100%;
+    max-width: 480px;
     aspect-ratio: 1;
 }
 .article-vertical-img img {

@@ -2204,3 +2204,8 @@ img#Twitter {
 .recommend-article .blog-tab-grid {
     margin: 64px 0 160px;
 }
+
+
+.blog-banner .banner-curve-shape img:first-child {
+    z-index: 1;
+}

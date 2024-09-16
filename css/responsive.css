@@ -484,7 +484,13 @@
 	.calender-container {
 		--position: 15%;
 	}	
+	.article-banner .banner-content h1 {
+		font-size: 38px;
+	}
 }
+
+
+
 @media screen and (max-width:768px){
 	.site-logo img {
 		max-width:120px;
@@ -601,9 +607,7 @@
 	.calender-container {
 		--position: 30%;
 	}
-	.article-banner .banner-content h1 {
-		font-size: 38px;
-	}
+	
 }
 
 @media screen and (max-width:575px){

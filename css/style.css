@@ -254,6 +254,7 @@ span.highlight {
     width: 100%;
     max-width: 900px;
     padding: 0 10px;
+    z-index: 2;
 }
 .banner-content h1 {
     color: #FFF;

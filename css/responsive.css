@@ -625,7 +625,41 @@
 	.calender-container {
 		--position: 30%;
 	}
-	
+	.secure-key-feature {
+		margin: 37px 0;
+	}
+	.secure-pay-content > h2 {
+		font-size: 32px;
+		margin: 0 0 20px;
+	}
+	.secure-pay-content p {
+		font-size: 18px;
+	}
+	.secure-key-feature > h4 {
+		font-size: 32px;
+		margin: 0 0 39px;
+	}
+	.list-content h4 {
+		font-size: 25px;
+	}
+	.article-vertical {
+		grid-template-columns: 100%;
+	}
+	.article-vertical-img {
+		max-width: 100%;
+	}
+	.article-vertical-content p {
+		font-size: 18px;
+	}
+	.article-vertical-content h4 {
+		margin: 0 0 20px;
+	}
+	.article-vertical {
+		margin: 0 0 0px;
+}
+.article-horizontal {
+	grid-gap: 26px;
+}
 }
 
 @media screen and (max-width:575px){
@@ -768,6 +802,9 @@
 	}
 	.site-banner.article-banner {
 		height: 800px;
+	}
+	.article-horizontal.grid-cols-2 {
+		grid-template-columns: 100%;
 	}
 }
 

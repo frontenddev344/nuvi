@@ -1591,7 +1591,7 @@ img#Twitter {
 }
 .card {
     background: #fff;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 32px;
     border: 4px solid #EFEFEF;
     transition: all 0.2s linear;
@@ -1666,6 +1666,8 @@ img#Twitter {
     border-top: 0;
     padding: 24px 32px;
     background: #F7F7F7;
+    border-bottom-left-radius: 25px !important;
+    border-bottom-right-radius: 25px !important;
 }
 
 .card-footer .date {

@@ -1984,7 +1984,7 @@ img#Twitter {
     height: 700px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 100%;
+    background-size:cover;
     background-color: rgb(55 47 39 / 30%);
     background-blend-mode: multiply;
     border-radius: 0px 0px 52px 52px;

@@ -821,6 +821,12 @@
 	.article-horizontal.grid-cols-2 {
 		grid-template-columns: 100%;
 	}
+	.secure-key-feature > h4 {
+		font-size: 27px;
+	}
+	.secure-pay-content > h2 {
+		font-size: 27px;
+	}
 }
 
 @media screen and (max-width:480px){

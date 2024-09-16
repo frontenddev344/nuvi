@@ -505,6 +505,16 @@
 	.article-horizontal-content h4 {
 		font-size: 24px;
 	}
+	.tag-social-bar-wrap {
+		grid-template-columns: 100%;
+		gap: 27px;
+	}
+	.tag-social-bar-wrap .date {
+		justify-content: center;
+	}
+	.tag-social-bar-wrap .card-tags {
+		text-align: center;
+	}
 }
 
 
@@ -661,6 +671,9 @@
 .article-horizontal {
 	grid-gap: 26px;
 	margin: 0 0 0px;
+}
+.tag-social-bar-wrap {
+    padding-bottom: 46px;
 }
 }
 

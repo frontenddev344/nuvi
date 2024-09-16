@@ -21,6 +21,7 @@ body {
     font-family:var(--helvetica);
 }
 
+
 html {
     scroll-behavior: smooth;
 }

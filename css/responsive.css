@@ -659,6 +659,7 @@
 }
 .article-horizontal {
 	grid-gap: 26px;
+	margin: 0 0 0px;
 }
 }
 

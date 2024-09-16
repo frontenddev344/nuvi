@@ -51,6 +51,9 @@
 	.card-title {
 		font-size: 28px;
 	}
+	.article-banner .banner-content h1 {
+		font-size: 45px;
+	}
 }
 @media screen and (max-width:1400px){
 	.calendar-sec-content {

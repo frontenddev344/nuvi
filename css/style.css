@@ -2146,8 +2146,8 @@ img#Twitter {
 }
 .article-horizontal {
     grid-gap: 72px;
-    padding: 24px 0;
-    margin: 0 0 84px;
+    padding: 24px 0 0;
+    margin: 0 0 0px;
 }
 .article-horizontal-img  img{
     width: 100%;

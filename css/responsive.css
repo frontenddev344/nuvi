@@ -487,6 +487,24 @@
 	.article-banner .banner-content h1 {
 		font-size: 38px;
 	}
+	.secure-pay-content > h2 {
+		font-size: 40px;
+	}
+	.secure-pay-content p {
+		font-size: 20px;
+	}
+	.secure-key-feature > h4 {
+		font-size: 40px;
+	}
+	.list-content h4 {
+		font-size: 28px;
+	}
+	.article-vertical-content h4 {
+		font-size: 30px;
+	}
+	.article-horizontal-content h4 {
+		font-size: 24px;
+	}
 }
 
 

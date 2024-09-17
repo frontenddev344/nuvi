@@ -2212,3 +2212,25 @@ img#Twitter {
 .blog-banner .banner-curve-shape img:first-child {
     z-index: 1;
 }
+
+
+/* 404 page start  */
+.site-banner.error-page {
+    background-image: url("../images/error-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.error-page .site-banner-warp {
+    height: 100%;
+}
+
+.error-page .banner-curve-shape {
+    position: static;
+}
+
+.error-page .banner-curve-shape img {
+    position: absolute;
+    inset: 0;
+}

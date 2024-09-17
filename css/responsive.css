@@ -276,6 +276,9 @@
 	.slider-button svg {
 		max-width: 270px;
 	}
+	.error_text span {
+		font-size: 579.735px;
+	}
 }
 
 @media screen and (max-width:1024px){
@@ -517,6 +520,12 @@
 	}
 	.tag-social-bar-wrap .card-tags {
 		text-align: center;
+	}
+	.error_text {
+		bottom: -47px;
+	}
+	.error_text span {
+		font-size: 498px;
 	}
 }
 

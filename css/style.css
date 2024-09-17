@@ -2290,6 +2290,7 @@ display: none
 .thankyou-page {
 background: #fff;
 position: relative;
+height: 100vh;
 }
 
 .thankyou-page .banner-curve-shape {
@@ -2310,4 +2311,7 @@ height: 100%;
 }
 .thankyou-header.site-header .container {
 justify-content: center;
+}
+.thankyou-page .site-banner-warp {
+height: 100%;
 }

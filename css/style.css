@@ -2239,12 +2239,31 @@ top: unset;
 left: 0;
 }
 .error-page .banner-curve-shape img:last-child {
-bottom: 41px;
+    bottom: 41px;
+    z-index: 3;
 }
 .back-home {
 margin-top: 44px;
 }
 .error-page .site-banner-warp::before{
-    display:none;
+display:none;
+}
+
+.error_text {
+    position: absolute;
+    bottom: -84px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
     }
     
+    .error_text span {
+    display: inline-block;
+    text-align: center;
+    font-size: 656.735px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 722.408px */
+    -webkit-text-stroke: 14px #2f2012;
+    color: transparent;
+    }

@@ -2296,15 +2296,18 @@ position: relative;
 position: static;
 }
 .thankyou-page .banner-curve-shape img {
-    position: absolute;
-    }
-    
-    .thankyou-page .banner-curve-shape img:first-child {
-    left: 0;
-    height: 100%;
-    }
-    
-    .thankyou-page .banner-curve-shape img:last-child {
-    right: 0;
-    height: 100%;
-    }
+position: absolute;
+}
+
+.thankyou-page .banner-curve-shape img:first-child {
+left: 0;
+height: 100%;
+}
+
+.thankyou-page .banner-curve-shape img:last-child {
+right: 0;
+height: 100%;
+}
+.thankyou-header.site-header .container {
+justify-content: center;
+}

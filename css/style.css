@@ -2239,5 +2239,12 @@ top: unset;
 left: 0;
 }
 .error-page .banner-curve-shape img:last-child {
-    bottom: 41px;
+bottom: 41px;
 }
+.back-home {
+margin-top: 44px;
+}
+.error-page .site-banner-warp::before{
+    display:none;
+    }
+    

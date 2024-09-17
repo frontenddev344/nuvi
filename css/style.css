@@ -2363,3 +2363,9 @@ height: 100%;
     .thankyou-page .thank-email a {
     color: #FF7A00;
     }
+    .thankyou-page .banner-content img {
+        width: 100%;
+        height: 100%;
+        max-width: 200px;
+        max-height: 200px;
+    }

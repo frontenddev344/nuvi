@@ -2221,6 +2221,8 @@ img#Twitter {
     background-position: center;
     background-size: cover;
     height: 100vh;
+    background: #000000;
+    position: relative;
 }
 .error-page .site-banner-warp {
     height: 100%;
@@ -2267,3 +2269,11 @@ display:none;
     -webkit-text-stroke: 14px #2f2012;
     color: transparent;
     }
+
+    .site-banner.error-page .banner-content {
+        z-index: 4;
+        }
+        
+        .site-banner.error-page .banner-content > p {
+        margin-bottom: 7px;
+        }

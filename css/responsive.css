@@ -693,6 +693,15 @@
 .error_text span {
 	font-size: 335px;
 }
+.thankyou-page .banner-content h1 {
+    font-size: 60px;
+}
+.thankyou-page .banner-content > p {
+    font-size: 20px;
+}
+.thankyou-page .banner-content h3 {
+    font-size: 38px;
+}
 }
 
 @media screen and (max-width:575px){

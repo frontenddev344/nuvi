@@ -2348,7 +2348,7 @@ height: 100%;
     color: #FF7A00;
     }
     
-    .thankyou-page .thank-email {
+    .thankyou-page .banner-content .thank-email {
     max-width: 100%;
     color: #111;
     text-align: center;
@@ -2360,7 +2360,7 @@ height: 100%;
     letter-spacing: -0.36px;
     }
     
-    .thankyou-page .thank-email a {
+    .thankyou-page .banner-content .thank-email a {
     color: #FF7A00;
     }
     .thankyou-page .banner-content img {

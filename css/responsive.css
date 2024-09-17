@@ -857,6 +857,10 @@
 	.error_text span {
 		font-size: 281px;
 	}
+	.thankyou-page .banner-content img {
+		max-width: 102px;
+		max-height: 102px;
+	}
 }
 
 @media screen and (max-width:480px){

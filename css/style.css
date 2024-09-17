@@ -2231,6 +2231,13 @@ img#Twitter {
 }
 
 .error-page .banner-curve-shape img {
-    position: absolute;
-    inset: 0;
+position: absolute;
+inset: 0;
+width: 100%;
+bottom: 0;
+top: unset;
+left: 0;
+}
+.error-page .banner-curve-shape img:last-child {
+    bottom: 41px;
 }

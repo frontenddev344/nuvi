@@ -80,3 +80,33 @@ $('button.back-to-top').click(function() {
   return false;
 });
 
+
+
+
+
+const startBgFrom = $('.comparison-content').position().top;
+const bgHeight = $('.comparison-vs-img').height();
+$('.cover-line').css('height',`${bgHeight}px`);
+// var outHeight = 600;
+// var MeinHeight1 = 2200;
+// $('.cover-line').css('height',outHeight+'px');
+$(window).scroll(function (event) {
+  var scroll = jQuery(window).scrollTop();
+  //MeinHeight = scroll-MeinHeight;
+  const newBgHeight = startBgFrom-scroll+50;
+  console.log(`scroll: ${scroll}`);
+  console.log(`Start From: ${startBgFrom}`);
+  console.log(startBgFrom-scroll);
+  // var mainScroll = scroll-outHeight;
+  // console.log(`mainScroll: ${mainScroll}`);
+  if(newBgHeight>0 && newBgHeight<=bgHeight){
+    jQuery('.cover-line').css('height',`${newBgHeight}px`);
+  }
+  else if ( newBgHeight <= 0 ){
+    jQuery('.cover-line').css('height',`0px`);
+  }
+  else {
+    jQuery('.cover-line').css('height',`${bgHeight}px`);
+  }
+  // jQuery('.cover-line').css('top',mainScroll+'px');
+});

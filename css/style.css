@@ -2368,3 +2368,16 @@ height: 100%;
         max-width: 200px;
         max-height: 200px;
     }
+
+
+    .cover-line {
+        background: #000000;
+        width: 35px;
+        left: -11px;
+        height: 95%;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+    }
+    
+

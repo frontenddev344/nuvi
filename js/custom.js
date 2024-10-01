@@ -84,29 +84,83 @@ $('button.back-to-top').click(function() {
 
 
 
+// const startBgFrom = $('.comparison-content').position().top;
+// const bgHeight = $('.comparison-vs-img').height();
+// $('.cover-line').css('height',`${bgHeight}px`);
+// // var outHeight = 600;
+// // var MeinHeight1 = 2200;
+// // $('.cover-line').css('height',outHeight+'px');
+// $(window).scroll(function (event) {
+//   var scroll = jQuery(window).scrollTop();
+//   //MeinHeight = scroll-MeinHeight;
+//   const newBgHeight = startBgFrom-scroll+50;
+//   console.log(`scroll: ${scroll}`);
+//   console.log(`Start From: ${startBgFrom}`);
+//   console.log(startBgFrom-scroll);
+//   // var mainScroll = scroll-outHeight;
+//   // console.log(`mainScroll: ${mainScroll}`);
+//   if(newBgHeight>0 && newBgHeight<=bgHeight){
+//     jQuery('.cover-line').css('height',`${newBgHeight}px`);
+//   }
+//   else if ( newBgHeight <= 0 ){
+//     jQuery('.cover-line').css('height',`0px`);
+//   }
+//   else {
+//     jQuery('.cover-line').css('height',`${bgHeight}px`);
+//   }
+//   // jQuery('.cover-line').css('top',mainScroll+'px');
+// });
+
+
 const startBgFrom = $('.comparison-content').position().top;
 const bgHeight = $('.comparison-vs-img').height();
-$('.cover-line').css('height',`${bgHeight}px`);
-// var outHeight = 600;
-// var MeinHeight1 = 2200;
-// $('.cover-line').css('height',outHeight+'px');
-$(window).scroll(function (event) {
-  var scroll = jQuery(window).scrollTop();
-  //MeinHeight = scroll-MeinHeight;
-  const newBgHeight = startBgFrom-scroll+50;
+const vsHeight = $('.comparison-list').height();
+$('.comparison-list').css('height', `${vsHeight}px`);
+
+$('.cover-line').css('height', `${bgHeight}px`);
+
+let currentAnimationIndex = 80; // Track the current visible animation index
+const scrollThreshold = 20; // Minimum scroll distance to trigger an animation change
+const scrollSensitivity = 1; // Sensitivity factor for scroll height reduction
+
+$(window).scroll(function () {
+  const scroll = $(window).scrollTop();
+  const newBgHeight = Math.max(0, startBgFrom - (scroll * scrollSensitivity)); // Reduce height by scrollSensitivity pixels
+
+  // console.log(`scroll: ${scroll}`);
+  console.log(`newBgHeight: ${newBgHeight}`);
   console.log(`scroll: ${scroll}`);
-  console.log(`Start From: ${startBgFrom}`);
-  console.log(startBgFrom-scroll);
-  // var mainScroll = scroll-outHeight;
-  // console.log(`mainScroll: ${mainScroll}`);
-  if(newBgHeight>0 && newBgHeight<=bgHeight){
-    jQuery('.cover-line').css('height',`${newBgHeight}px`);
+  // Update cover-line height
+  if (newBgHeight <= bgHeight) {
+    $('.cover-line').css('height', `${newBgHeight}px`);
+  } else {
+    $('.cover-line').css('height', `${bgHeight}px`);
   }
-  else if ( newBgHeight <= 0 ){
-    jQuery('.cover-line').css('height',`0px`);
+
+  // Manage visibility of vs_animation elements
+  let foundCurrent = false; // Track if we found the current animation
+  $('.vs_animation').each(function(index) {
+    const animationTop = $(this).offset().top; // Get the position of each animation
+
+    // Check if the scroll position is past the animation
+    if (scroll + $('.comparison-content').outerHeight() > animationTop - scrollThreshold) {
+      // Only show the animation if it's not already visible
+      if (currentAnimationIndex !== index) {
+        // If it's a new animation, reset the previous one
+        if (currentAnimationIndex !== -1) {
+          $('.vs_animation').eq(currentAnimationIndex).removeClass('vault').css('opacity', '0'); // Hide previous animation
+        }
+        $(this).addClass('vault').css('opacity', '1'); // Show current animation
+        currentAnimationIndex = index; // Update the current animation index
+      }
+      foundCurrent = true; // Set foundCurrent to true
+    }
+  });
+
+  // If no current animation is found, reset
+  if (!foundCurrent && currentAnimationIndex !== -1) {
+    $('.vs_animation').eq(currentAnimationIndex).removeClass('vault').css('opacity', '0');
+    currentAnimationIndex = -1; // Reset the current animation index
   }
-  else {
-    jQuery('.cover-line').css('height',`${bgHeight}px`);
-  }
-  // jQuery('.cover-line').css('top',mainScroll+'px');
+ 
 });

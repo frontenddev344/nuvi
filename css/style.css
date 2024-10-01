@@ -1211,6 +1211,7 @@ img#Twitter {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    animation: pulse2 2s infinite;
 }
 .comparison-vs-img .test-vs::before {
     content: "";

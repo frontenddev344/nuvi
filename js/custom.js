@@ -169,11 +169,11 @@ $(window).scroll(function () {
 
 $(document).ready(function() {
   // Ensure that the magic-behind and dynamic line elements exist before proceeding
-  if ($('.magic-behind').length && $('.dynamic-line').length) {
+  if ($('.calender-main').length && $('.dynamic-line').length) {
 
     // Get the top position of the magic-behind section
-    const magicBehindTop = $('.magic-behind').offset().top;
-    const magicBehindHeight = $('.magic-behind').outerHeight(); // Full height of the magic-behind section
+    const magicBehindTop = $('.calender-main').offset().top;
+    const magicBehindHeight = $('.calender-main').outerHeight(); // Full height of the magic-behind section
     const maxLineHeight = $('.item.timeline-child-center').outerHeight(); // Max height the dynamic line starts with
 
     // Set the default height of the dynamic line to 100% or maxLineHeight

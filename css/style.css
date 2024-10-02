@@ -2407,3 +2407,14 @@ height: 100%;
         }
     }
 
+
+
+    
+    .dynamic-line {
+        background: #000000;
+        width: 35px;
+        left: -11px;
+        height: 95%;
+        position: absolute;
+        bottom: 0;
+    } 

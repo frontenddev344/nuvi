@@ -164,3 +164,43 @@ $(window).scroll(function () {
   }
  
 });
+
+
+
+$(document).ready(function() {
+  // Ensure that the magic-behind and dynamic line elements exist before proceeding
+  if ($('.magic-behind').length && $('.dynamic-line').length) {
+
+    // Get the top position of the magic-behind section
+    const magicBehindTop = $('.magic-behind').offset().top;
+    const magicBehindHeight = $('.magic-behind').outerHeight(); // Full height of the magic-behind section
+    const maxLineHeight = $('.item.timeline-child-center').outerHeight(); // Max height the dynamic line starts with
+
+    // Set the default height of the dynamic line to 100% or maxLineHeight
+    $('.dynamic-line').css('height', `${maxLineHeight}px`);
+
+    $(window).on('scroll', function () {
+      var scrollPosition = $(window).scrollTop();
+      
+      // Check if the scroll position is within the magic-behind section
+      if (scrollPosition >= magicBehindTop && scrollPosition <= (magicBehindTop + magicBehindHeight)) {
+        // Calculate the percentage of scroll within the magic-behind section
+        const scrollInMagicBehind = scrollPosition - magicBehindTop;
+
+        // Calculate how much to reduce the height by 100 pixels per scroll event
+        const newLineHeight = Math.max(maxLineHeight - Math.floor(scrollInMagicBehind / 100) * 120, 0);
+
+        // Apply the new height to the dynamic line
+        $('.dynamic-line').css('height', `${newLineHeight}px`);
+
+      } else if (scrollPosition < magicBehindTop) {
+        // Before reaching the magic-behind, set the height to maxLineHeight
+        $('.dynamic-line').css('height', `${maxLineHeight}px`);
+        
+      } else if (scrollPosition > (magicBehindTop + magicBehindHeight)) {
+        // After scrolling past the magic-behind, set the height to 0
+        $('.dynamic-line').css('height', `0px`);
+      }
+    });
+  }
+});

@@ -2409,12 +2409,17 @@ height: 100%;
 
 
 
-    
     .dynamic-line {
-        background: #000000;
-        width: 35px;
-        left: -11px;
+        background: #ffffff;
+        width: calc(100% + 43px);
+        left: -22px;
         height: 95%;
         position: absolute;
         bottom: 0;
-    } 
+        z-index: 99999;
+        transition: height 0.3s ease; /* Adjust duration and easing as desired */
+    }
+.item.timeline-child-center {
+position: relative;
+}
+

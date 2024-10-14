@@ -709,6 +709,17 @@
 .thankyou-page .banner-content h3 {
     font-size: 38px;
 }
+.drag-exmaple {
+    width: 320px;
+	padding: 30px;
+}
+.drag-hand img {
+    max-width: 30px;
+}
+.drag-exmaple h4 {
+    font-size: 32px;
+}
+
 }
 
 @media screen and (max-width:575px){
@@ -867,6 +878,9 @@
 	.thankyou-page .banner-content img {
 		max-width: 102px;
 		max-height: 102px;
+	}
+	.drag-exmaple h4 {
+		font-size: 24px;
 	}
 }
 

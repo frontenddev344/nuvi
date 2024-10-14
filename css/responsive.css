@@ -880,7 +880,11 @@
 		max-height: 102px;
 	}
 	.drag-exmaple h4 {
-		font-size: 24px;
+		font-size: 16px;
+	}
+	.drag-exmaple {
+		width: 150px;
+		padding: 10px;
 	}
 }
 
